@@ -1,0 +1,63 @@
+:root {
+  --Fondo: hsl(204, 70%, 72%);
+  --dark-grayish-blue: rgb(154, 154, 154);
+  --black: hsl(0, 1%, 16%);
+  --White: hsl(0, 0%, 100%);
+  --Noto-Sans: "Noto Sans KR", sans-serif;
+  --Jost: "Jost", sans-serif;
+}
+body {
+  background: var(--Fondo);
+  margin: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.tarjeta {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  place-items: center;
+}
+.tarjeta-contenedor {
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+  background: var(--White);
+  display: block;
+  width: 300px;
+  margin: auto auto;
+  padding: 20px;
+}
+.tarjeta-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+.tarjeta-info {
+  text-align: center;
+}
+.tarjeta-titulo {
+  font-family: var(--Noto-Sans);
+  color: var(--black);
+  font-size: 20px;
+  padding: 0 10px;
+}
+.tarjeta-texto {
+  font-size: 18px;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 20px;
+  font-family: var(--Jost);
+  padding: 0 10px;
+}
+
+@media (min-width: 375px) {
+  .contenedor {
+    display: flex;
+    width: 600px;
+  }
+  .titulo {
+    width: 200px;
+  }
+  .texto {
+    width: 240px;
+  }
+}
